@@ -38,7 +38,7 @@ public class TestRedis {
         operations.set("com.moon.f", user, 1, TimeUnit.SECONDS);
         Thread.sleep(1000);
         // redisTemplate.delete("com.neo.f");
-        boolean exists = redisTemplate.hasKey("com.neo.f");
+        boolean exists = redisTemplate.hasKey("com.moon.f");
         if (exists) {
             System.out.println("exists is true");
         } else {
