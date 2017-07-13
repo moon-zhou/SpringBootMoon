@@ -55,6 +55,14 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 
+		<!-- Mybatis https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -66,7 +74,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-		
+
 		<!-- WebJars是一个很神奇的东西，可以让大家以jar包的形式来使用前端的各种框架、组件。WebJars的jar包部署在Maven中央仓库上 -->
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
@@ -83,7 +91,7 @@
 			<artifactId>vue</artifactId>
 			<version>2.1.3</version>
 		</dependency>
-		
+
 		<!-- 引入redis,内存数据存储 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
