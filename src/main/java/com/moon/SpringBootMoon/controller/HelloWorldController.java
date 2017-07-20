@@ -3,6 +3,7 @@ package com.moon.SpringBootMoon.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.moon.SpringBootMoon.domain.User;
@@ -15,7 +16,7 @@ public class HelloWorldController {
     private UserRepository userRepository;
     
     // http://localhost:8080/hello
-    @RequestMapping("/hello")
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String index() {
         return "Hello World";
     }

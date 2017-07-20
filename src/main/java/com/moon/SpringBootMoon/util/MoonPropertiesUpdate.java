@@ -1,23 +1,20 @@
 package com.moon.SpringBootMoon.util;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MoonProperties {
+@ConfigurationProperties(prefix = "com.moon")
+public class MoonPropertiesUpdate {
     
-    @Value("${com.moon.title}")
     private String title;
     
-    @Value("${com.moon.description}")
     private String description;
     
-    @Value("${com.moon.age}")
     private Integer age;
-
-    @Value("${com.moon.content}")
-    private String content;
     
+    private String content;
+
     public String getTitle() {
         return title;
     }
@@ -49,5 +46,5 @@ public class MoonProperties {
     public void setContent(String content) {
         this.content = content;
     }
-
+    
 }

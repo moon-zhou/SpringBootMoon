@@ -9,13 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.moon.SpringBootMoon.util.MoonProperties;
+import com.moon.SpringBootMoon.util.MoonPropertiesUpdate;
 
 @Controller
 public class ThymeleafController {
 
     @Autowired
-    private MoonProperties moonProperties;
+    private MoonPropertiesUpdate moonProperties;
+//    private MoonProperties moonProperties;
     
     // http://localhost:8080/hi
     @RequestMapping("/hi")
@@ -29,6 +30,8 @@ public class ThymeleafController {
         
         model.addAttribute("title", moonProperties.getTitle());
         model.addAttribute("description", moonProperties.getDescription());
+        model.addAttribute("age", moonProperties.getAge());
+        model.addAttribute("content", moonProperties.getContent());
         
         return "hello";
     }
