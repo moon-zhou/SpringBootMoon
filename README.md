@@ -13,4 +13,4 @@ spring boot test project
 
 1. 直接启动@SpringBootApplication的main
 1. 进入工程目录， mvn spring-boot:run
-1. mvn install;进入工程target目录;java -jar *****.jar
+1. mvn install;  进入工程target目录;  java -jar *****.jar [--spring.profiles.active=prod]
