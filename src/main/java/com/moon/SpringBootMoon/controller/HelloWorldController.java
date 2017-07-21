@@ -2,6 +2,7 @@ package com.moon.SpringBootMoon.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.moon.SpringBootMoon.domain.User;
 import com.moon.SpringBootMoon.domain.UserRepository;
 
+// @RestController等同于@Controller + @ResponseBody
+// 此处也可以加@RequestMapping
 @RestController
 public class HelloWorldController {
     
@@ -16,7 +19,8 @@ public class HelloWorldController {
     private UserRepository userRepository;
     
     // http://localhost:8080/hello
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+//    @RequestMapping(value = {"/hello", "/hhhhh"}, method = RequestMethod.GET)
+    @GetMapping(value = {"/hello", "/hhhhh"})
     public String index() {
         return "Hello World";
     }
