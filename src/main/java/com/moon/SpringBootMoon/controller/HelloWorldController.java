@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.moon.SpringBootMoon.domain.User;
-import com.moon.SpringBootMoon.domain.UserRepository;
+import com.moon.SpringBootMoon.repository.UserRepository;
 
 // @RestController等同于@Controller + @ResponseBody
 // 此处也可以加@RequestMapping

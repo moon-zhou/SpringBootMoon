@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.moon.SpringBootMoon.domain.User;
-import com.moon.SpringBootMoon.domain.UserRepository;
+import com.moon.SpringBootMoon.repository.UserRepository;
 
 @RestController
 public class UserController {
