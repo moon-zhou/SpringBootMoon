@@ -1,6 +1,8 @@
-package com.moon.SpringBootMoon.domain;
+package com.moon.SpringBootMoon.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.moon.SpringBootMoon.domain.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
