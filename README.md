@@ -5,7 +5,7 @@ spring boot test project
 ### 预启动
 1. mysql数据库
 2. redis  
-启动redis server：redis-server.exe [redis.conf]  
+启动redis server(进入目录D:\DevProgrm\Redis-x64-3.2.100)：redis-server.exe [redis.conf]  
 客户端：redis-cli.exe [-h 192.168.10.61 -p 6379]  
 
 
